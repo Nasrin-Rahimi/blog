@@ -4,4 +4,7 @@ class CommentsController < ApplicationController
         # binding.pry
     end
 
+    def destroy
+    end
+
 end
