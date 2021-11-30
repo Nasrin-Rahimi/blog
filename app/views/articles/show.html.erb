@@ -2,16 +2,7 @@
 <p> <%= @article.body %> </p>
 
 <h2>Comments</h2>
-<% @article.comments.each do |comment| %>
-    <p>
-        <strong>commenter</strong>
-        <%= comment.commenter %>
-    </p>
-    <p>
-        <strong>comment</strong>
-        <%= comment.body %>
-    </p>
-<% end %>
+<%= render @article.comments %>
 
 <h2>Add a comment:</h2>
 
